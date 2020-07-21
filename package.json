@@ -1,0 +1,23 @@
+{
+  "name": "drf",
+  "version": "1.0.0",
+  "description": "Do Redis Function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitcoin-api/drf.git"
+  },
+  "keywords": [
+    "redis",
+    "function"
+  ],
+  "author": "Michael Stecky-Efantis",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/bitcoin-api/drf/issues"
+  },
+  "homepage": "https://github.com/bitcoin-api/drf#readme"
+}
