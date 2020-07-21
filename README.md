@@ -26,7 +26,7 @@ const drf = require( 'drf' );
 
     const response = await drf({
 
-        performFunction = ({
+        performFunction: ({
 
             redisClient
 
@@ -45,7 +45,7 @@ const drf = require( 'drf' );
                 });
             });
         },
-        functionName = 'test function'
+        functionName: 'test function'
     });
 
     console.log( response );
