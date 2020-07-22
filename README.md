@@ -26,7 +26,7 @@ const drf = require( 'drf' );
 
     const response = await drf({
 
-        performFunction: ({
+        redisFunction: ({
 
             redisClient
 

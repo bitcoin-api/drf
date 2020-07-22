@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/bitcoin-api/drf/issues"
   },
-  "homepage": "https://github.com/bitcoin-api/drf#readme"
+  "homepage": "https://github.com/bitcoin-api/drf#readme",
+  "dependencies": {
+    "get-redis-client": "^1.0.1"
+  }
 }
