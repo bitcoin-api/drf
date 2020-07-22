@@ -7,7 +7,7 @@ drf - Do Redis Function
 
 ## About
 
-Fast Access to Redis Functionality
+Fast access to redis functionality. Great to use in combination with [do-redis-request](https://github.com/bitcoin-api/do-redis-request).
 
 
 ## Set Up
@@ -23,11 +23,12 @@ preview: code coming soon
 // assumes process.env.REDIS_URL is your Redis URL
 
 const drf = require( 'drf' );
+const doRedisRequest = require( 'do-redis-request' );
 
 
 (async () => {
 
-    const response = await drf({
+    const drfResponse = await drf({
 
         redisFunction: ({
 
@@ -35,22 +36,19 @@ const drf = require( 'drf' );
 
         }) => {
 
-            return new Promise( ( resolve, reject ) => {
+            const redisValue = await doRedisRequest({
 
-                redisClient.get( 'megaKey', ( err, response ) => {
-                    
-                    if( !!err ) {
-
-                        return reject( err );
-                    }
-
-                    resolve( response );
-                });
+                client: redisClient,
+                command: 'get',
+                redisArguments: [ 'redisKey' ],
             });
+
+            return redisValue;
         },
+        
         functionName: 'test function'
     });
 
-    console.log( response );
+    console.log( 'Redis Value:', drfResponse );
 })();
 ```
