@@ -30,7 +30,7 @@ const doRedisRequest = require( 'do-redis-request' );
 
     const drfResponse = await drf({
 
-        redisFunction: ({
+        redisFunction: async ({
 
             redisClient
 
@@ -45,7 +45,7 @@ const doRedisRequest = require( 'do-redis-request' );
 
             return redisValue;
         },
-        
+
         functionName: 'test function'
     });
 
