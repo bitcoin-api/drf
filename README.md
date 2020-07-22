@@ -1,4 +1,7 @@
-# drq
+# drf
+
+[![npm version](https://badge.fury.io/js/drf.svg)](https://badge.fury.io/js/drf)
+
 drf - Do Redis Function
 
 
