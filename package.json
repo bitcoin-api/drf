@@ -1,6 +1,6 @@
 {
   "name": "drf",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Do Redis Function",
   "main": "index.js",
   "scripts": {
