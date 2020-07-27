@@ -10,17 +10,18 @@ drf - Do Redis Function
 Fast access to redis functionality. Great to use in combination with [do-redis-request](https://github.com/bitcoin-api/do-redis-request).
 
 
+## Installation
+```
+npm install drf --save
+```
+
 ## Set Up
-`process.env.REDIS_URL` needs to be set to your Redis URL
+Your Redis URL can be set using the environment variable `process.env.REDIS_URL`. The default Redis URL is `127.0.0.1:6379`.
 
 
 ## Example
-preview: code coming soon
-
 ```.js
 'use strict';
-
-// assumes process.env.REDIS_URL is your Redis URL
 
 const drf = require( 'drf' );
 const doRedisRequest = require( 'do-redis-request' );

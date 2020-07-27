@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/bitcoin-api/drf#readme",
   "dependencies": {
-    "get-redis-client": "^1.0.1"
+    "get-redis-client": "^1.0.5"
   }
 }
