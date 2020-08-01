@@ -2,7 +2,13 @@
 
 [![npm version](https://badge.fury.io/js/drf.svg)](https://badge.fury.io/js/drf)
 
-drf - Do Redis Function
+<img
+    src="https://bitcoin-api.s3.amazonaws.com/documents/open-source/drf/DoctorF-by-Azubuike-Nwadike.png"
+    width="300"
+/>
+
+
+### Dr. F - Do Redis Function
 
 
 ## About
@@ -53,3 +59,11 @@ const doRedisRequest = require( 'do-redis-request' );
     console.log( 'Redis Value:', drfResponse );
 })();
 ```
+
+### Credits:
+
+**[Bitcoin-Api](https://github.com/bitcoin-api)**
+
+**Coding:** [Michael Stecky-Efantis](https://www.linkedin.com/in/bitcoin-api) - contact for enterprise [Bitcoin-Api.io](https://bitcoin-api.io) Bitcoin and crypto services - add crypto to your business!
+
+**Art Design:** [Azubuike Nwadike](https://www.facebook.com/xbilldn) - contact to hire for excellent quality design and art work
